@@ -23,6 +23,7 @@ Output JSON Data: Output should include the new data structure and be sorted in 
 
 ## Solution
 
+My python environment: Anaconda Python 3.
 Download the repo, in the terminal, change directory into this folder. The sample input and output is already in the folder.
 
 ### How to run
