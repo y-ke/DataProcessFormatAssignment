@@ -94,7 +94,7 @@ def jsonSalesData(file_path: str):
 class TestJSONSalesDataMethods(unittest.TestCase):
 
     def test_jsonSalesData(self):
-        path = '/Users/yujingke/Documents/GitHub/DataProcessFormatAssignment/instawork_input.txt'
+        path = '../instawork_input.txt'
         self.assertEqual(jsonSalesData(path), ['$799', '$799', '$999', '$999', '$1099', '$1099'])
 
    
