@@ -31,13 +31,23 @@ Output JSON Data: Output should include the new data structure and be sorted in 
 ## Solution
 
 My python environment: Anaconda Python 3.
+
 Download the repo, in the terminal, change directory into this folder. The sample input and output is already in the folder. A simple unit test is implemented to test if the prices are sorted correctly.
 
 ### How to run
 
 Change the path = '../instawork_input.txt' line according to the specific path corresponding to your setup.
-In Terminal:
+
+In Terminal, type:
+
 python3 instawork_p1.py
+
+The unit test result:
+
+Ran 1 test in 0.005s
+
+OK
+
 
 ### Output
 
