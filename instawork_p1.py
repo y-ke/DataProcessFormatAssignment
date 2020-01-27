@@ -17,36 +17,36 @@ class Phone:
 
 
 def merge(array, lo, hi, mid, comparator):
-    left_part = array[lo : mid + 1]
-    right_part = array[mid + 1 : hi + 1]
+    leftPart = array[lo : mid + 1]
+    rightPart = array[mid + 1 : hi + 1]
 
     i = 0 # pointer for left part 
     j = 0 # pointer for right part 
-    sorted_index = lo # pointer for sorted part 
+    sortedIndex = lo # pointer for sorted part 
 
-    while i < len(left_part) and j < len(right_part):
+    while i < len(leftPart) and j < len(rightPart):
 
-        if comparator(left_part[i], right_part[j]):
-            array[sorted_index] = left_part[i]
+        if comparator(leftPart[i], rightPart[j]):
+            array[sortedIndex] = leftPart[i]
             i += 1
         else:
-            array[sorted_index] = right_part[j]
+            array[sortedIndex] = rightPart[j]
             j += 1
 
-        sorted_index += 1
+        sortedIndex += 1
 
-    while i < len(left_part):
-        array[sorted_index] = left_part[i]
+    while i < len(leftPart):
+        array[sortedIndex] = leftPart[i]
         i += 1
-        sorted_index += 1
+        sortedIndex += 1
 
-    while j < len(right_part):
-        array[sorted_index] = right_part[j]
+    while j < len(rightPart):
+        array[sortedIndex] = rightPart[j]
         j += 1
-        sorted_index += 1
+        sortedIndex += 1
 
 
-def merge_sort(array, lo, hi, comparator): 
+def mergeSort(array, lo, hi, comparator): 
     if lo >= hi:
         return
 
@@ -76,7 +76,7 @@ def jsonSalesData(file_path: str):
 
         phoneList.append(iPhone)
 
-    merge_sort(phoneList, 0, len(phoneList) -1, \
+    mergeSort(phoneList, 0, len(phoneList) -1, \
                     lambda p1, p2: int(p1.price[1:]) < int(p2.price[1:]))
     
     file = open('outputfile.txt', 'w') 
@@ -94,7 +94,7 @@ def jsonSalesData(file_path: str):
 class TestJSONSalesDataMethods(unittest.TestCase):
 
     def test_jsonSalesData(self):
-        path = '../instawork_input.txt'
+        path = '/Users/yujingke/Documents/GitHub/DataProcessFormatAssignment/instawork_input.txt'
         self.assertEqual(jsonSalesData(path), ['$799', '$799', '$999', '$999', '$1099', '$1099'])
 
    
