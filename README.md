@@ -32,8 +32,13 @@ python3 instawork_p1.py
 ### Output
 
 Name: iPhone X, Color: Black, Price: $799, Storage: 256GB, Rating: 3.5 stars, Url: https://www.amazon.com/iPhone_X_Blac
+
 Name: iPhone X, Color: White, Price: $799, Storage: 256GB, Rating: 3.5 stars, Url: https://www.amazon.com/iPhone_X_White
+
 Name: iPhone 11, Color: Black, Price: $999, Storage: 128GB, Rating: 3.75 stars, Url: https://www.amazon.com/iPhone_X_Black
+
 Name: iPhone 11, Color: White, Price: $999, Storage: 128GB, Rating: 3.75 stars, Url: https://www.amazon.com/iPhone_X_White
+
 Name: iPhone 11, Color: Black, Price: $1099, Storage: 256GB, Rating: 4 stars, Url: https://www.amazon.com/iPhone_X_Black
+
 Name: iPhone 11, Color: Rose Gold, Price: $1099, Storage: 256GB, Rating: 4 stars, Url: https://www.amazon.com/iPhone_11_Rose_Gold
